@@ -1,3 +1,5 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 from flask import Flask, render_template, Response
 import gunicorn
 from camera import *
